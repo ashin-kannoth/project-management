@@ -1,1 +1,6 @@
-// Project model with fillable fields and belongsTo
+protected $fillable = ['title', 'description'];
+
+public function user()
+{
+    return $this->belongsTo(User::class);
+}
