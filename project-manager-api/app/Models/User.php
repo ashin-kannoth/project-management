@@ -1,7 +1,4 @@
-use Laravel\Sanctum\HasApiTokens;
-
-class User extends Authenticatable
+public function projects()
 {
-    use HasApiTokens, HasFactory, Notifiable;
-    ...
+    return $this->hasMany(Project::class);
 }
